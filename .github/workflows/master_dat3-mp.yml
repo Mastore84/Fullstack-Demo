@@ -42,7 +42,7 @@ jobs:
         uses: actions/download-artifact@v2
         with:
           name: java-app
-          path: '${{ github.workspace }}/target/*jar'
+          path: '${{ github.workspace }}/target/*.jar'
           retention-days: 1
 
       - name: Deploy to Azure Web App
